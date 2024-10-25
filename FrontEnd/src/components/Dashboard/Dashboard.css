@@ -1,0 +1,106 @@
+.banner{
+    margin-left: 109px;
+    margin-top: 70px; 
+    max-width: 100%;
+}
+
+h1{
+    margin: 0px;
+    margin-bottom: 40px;
+    font-size: 48px;
+}
+h2{
+    margin: 0px;
+    font-size: 18px;
+}
+
+.colorName{
+    color: #FF0101;
+}
+
+.board{
+    margin-left: 109px;
+    display: grid;
+    margin-top: 77px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.chartOne{
+    grid-column: span 3;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    row-gap: 39px;
+    grid-column-start: 4;
+    grid-row: span 2;
+}
+
+.wrapperDashboard{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.noProfil{
+    margin: auto;
+    text-align: center;
+}
+
+.noProfil h2{
+    font-size: 90px;
+}
+.noProfil h4{
+    font-size: 70px;
+}
+
+@media screen and (max-width:1350px) {
+    .board{
+        margin-left: 50px;
+    }
+    .banner{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:1170px) {
+
+    .board{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.2fr;
+        gap: 10px;
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+    .chartOne{
+         grid-column: span 3;
+    }  
+    .aside{
+        grid-column-start: 1;
+        grid-column: span 3;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    } 
+    .banner{
+        margin-top: 20px;
+    }
+    .chartTwo{
+        grid-row-start: 2;
+        height: fit-content;
+        height: 50px;
+    }
+    .chartThree{
+        grid-row-start: 2;
+        height: 50px;
+    }
+    .chartFour{
+        grid-row-start: 2;
+        height: 50px;
+    }
+    
+}

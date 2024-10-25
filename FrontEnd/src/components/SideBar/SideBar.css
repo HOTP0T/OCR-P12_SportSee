@@ -1,0 +1,40 @@
+.sideBar{
+    background-color: black;
+    width: 117px;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.sideBarIcon{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 250px 26px 0px 26px;   
+}
+
+.sideBarIcon li{
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 12px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    margin-bottom: 150px;
+}
+
+.sideBarWrapper{
+    height: 100%;
+    background-color: black;
+}
+
+@media screen and (max-height : 940px){
+    .sideBarIcon{
+        margin: 50px 26px 0px 26px;
+    }
+}
