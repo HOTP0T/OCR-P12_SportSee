@@ -1,5 +1,5 @@
 .banner{
-    margin-left: 109px;
+    margin-left: 59px;
     margin-top: 70px; 
     max-width: 100%;
 }
@@ -19,7 +19,7 @@ h2{
 }
 
 .board{
-    margin-left: 109px;
+    margin-left: 59px;
     display: grid;
     margin-top: 77px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -36,7 +36,7 @@ h2{
 .aside{
     display: flex;
     flex-direction: column;
-    row-gap: 39px;
+    justify-content: space-between;
     grid-column-start: 4;
     grid-row: span 2;
 }
@@ -70,14 +70,14 @@ h2{
 @media screen and (max-width:1170px) {
 
     .board{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 0.2fr;
         gap: 10px;
         margin-top: 15px;
         margin-left: 30px;
     }
     .chartOne{
-         grid-column: span 3;
+        grid-column: span 3;
     }  
     .aside{
         grid-column-start: 1;

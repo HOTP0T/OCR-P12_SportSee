@@ -1,5 +1,5 @@
 header{
-    max-width: 100%;
+    width: 100%;
 }
 
 .headerBox{
@@ -7,8 +7,6 @@ header{
     display: flex;
     max-width: 100%;
 }
-
-
 
 .headerBox img{
     width: 178px;
@@ -38,5 +36,5 @@ header{
 }
 
 .wrapperBanner{
-    max-width: 100%;
+    width: 100%;
 }
