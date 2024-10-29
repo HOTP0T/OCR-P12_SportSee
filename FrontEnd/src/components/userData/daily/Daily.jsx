@@ -2,6 +2,8 @@ import React from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import './daily.css'
 
+// https://recharts.org/en-US/api/BarChart
+
 function DailyChart({ activityData }) {
     /**
      * Custom Tooltip
@@ -57,10 +59,10 @@ function DailyChart({ activityData }) {
                         tickMargin={45} 
                         minTickGap={27}
                     />
-                    <Tooltip 
+                    <Tooltip
                         content={<CustomTooltip />} 
                         wrapperStyle={{width: "2.44rem", height: "3.94rem", outline: "none", backgroundColor: "#FF0000", fontSize:"10px", color:"white", textAlign:"center"}}
-                     />
+                    />
                     <Legend 
                         className='activityLegend' 
                         verticalAlign='top' 

@@ -5,6 +5,9 @@ import { ResponsiveContainer, PolarGrid, PolarAngleAxis, Radar, RadarChart, } fr
  * @param {Object}  
  * @returns 
  */
+
+// https://recharts.org/en-US/api/RadarChart
+
 const RadarChartThree = ({ perfData }) => {
 
 	perfData.data.sort((a,b) => {
@@ -12,7 +15,7 @@ const RadarChartThree = ({ perfData }) => {
 	})
 
 	return (
-		<div className="radarChart" style={{ minWidth: "258px", height: "263px" }}>
+		<div className="radarChart" style={{ minWidth: "200px", height: "200px" }}>
 			<ResponsiveContainer>
 				<RadarChart cx="50%" cy="50%" outerRadius={80} data={perfData.data} style={{ backgroundColor: "#282D30", borderRadius: "5px" }}>
 					<PolarGrid 

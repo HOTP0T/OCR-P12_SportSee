@@ -4,12 +4,16 @@ import { useEffect, useState } from "react"
 import { Link } from 'react-router-dom'
 /**
  * Use mocked data
+ * import dataUser from '../../services/mockFetch'
  */
-import dataUser from '../../services/mockFetch'
+
 /**
  * Use API
  * import dataUser from '../../services/fetch'
  */
+
+import dataUser from '../../services/mockFetch'
+
 import DailyChart from '../userData/daily/Daily'
 import UserAverageSessions from '../userData/average/Average'
 import RadarChartThree from '../userData/radar/Radar'

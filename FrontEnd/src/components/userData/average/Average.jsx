@@ -1,6 +1,9 @@
 import React from "react"
 import {LineChart,Tooltip, XAxis, YAxis, Line, ResponsiveContainer, Rectangle, CartesianGrid, Legend} from "recharts"
 
+// https://recharts.org/en-US/api/LineChart
+// https://recharts.org/en-US/api/CartesianGrid
+
 function UserAverageSessions({averageSessionData}) {
     const CustomTooltipSessions = ({ active, payload }) => {
         if (active && payload && payload.length) {
@@ -26,7 +29,7 @@ function UserAverageSessions({averageSessionData}) {
     };
 
     return (
-        <div className="linearChart" style={{ minWidth: "258px", height: "263px" }}>
+        <div className="linearChart" style={{ minWidth: "200px", height: "200px" }}>
 			<ResponsiveContainer>
 				<LineChart width={300} height={300}
 					data={averageSessionData.sessions}

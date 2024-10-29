@@ -1,7 +1,7 @@
 import React from "react";
 import { ResponsiveContainer, Pie, PieChart,} from "recharts";
 
-
+// https://recharts.org/en-US/api/PieChart
 /**
  * Component that displays the pieChart called in the dashboard page
  * @component
@@ -14,7 +14,7 @@ const ObjectifChart = ({ mainData }) => {
 		{ name: 'Score', value: mainData.scorePourcent},
 	]
 	return (
-		<div className="objectifChart" style={{ minWidth: "258px", height: "263px", backgroundColor: "#FBFBFB", borderRadius: "5px",}}>
+		<div className="objectifChart" style={{ minWidth: "200px", height: "200px", backgroundColor: "#FBFBFB", borderRadius: "5px",}}>
 			<ResponsiveContainer>
 				<PieChart width={50} height={50}>
 					<Pie 
@@ -23,7 +23,7 @@ const ObjectifChart = ({ mainData }) => {
 						startAngle={170} endAngle={170 - (mainData.scorePourcent * 360) / 100} 
 						innerRadius={80} outerRadius={90} cornerRadius={5}
 						fill="#FF0000" 
-					/>	
+					/>
 					<Pie 
 						data={data} dataKey={"value"}
 						cx="50%" cy="50%" 
@@ -31,7 +31,7 @@ const ObjectifChart = ({ mainData }) => {
 						innerRadius={0} outerRadius={80} 
 						fill="white"
 					/>
-					<text x={20} y={50}>
+					<text x={35} y={70}>
 						Score
 					</text>
 					<text x="41%" y="45%" fontSize="24px" fontWeight={900}>
